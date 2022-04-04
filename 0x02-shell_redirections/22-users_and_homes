@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -i "^[a-z]" /etc/ssh/sshd_config
+cut -d':' -f1,6 /etc/passwd | sort
